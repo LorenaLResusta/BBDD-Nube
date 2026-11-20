@@ -1,0 +1,78 @@
+# Resultados de Aprendizaje (RA) y Criterios de Evaluación (CE)
+# Módulo 5162 · Administración de bases de datos y almacenamiento en la nube (100 h · 12 ECTS)
+# Curso de especialización de FP de grado superior en Recursos y servicios en la nube
+# Real Decreto 145/2026, de 25 de febrero (BOE-A-2026-4673)
+#
+# Redacción adaptada del anexo del RD. Antes de usarla en la programación didáctica,
+# cotéjala con el texto oficial: https://www.boe.es/buscar/act.php?id=BOE-A-2026-4673
+# El shortcode {{< ra >}} muestra estos textos en todas las páginas en castellano.
+RA1:
+  titulo: "Selecciona el tipo de almacenamiento para los datos del sistema, según los requisitos funcionales y los criterios de durabilidad, seguridad, fiabilidad, rendimiento y coste."
+  ce:
+    a: "Se ha comprobado que el almacenamiento de objetos y de ficheros elegido cumple los requisitos funcionales y no funcionales del sistema."
+    b: "Se ha consultado la documentación de los tipos de almacenamiento para verificar sus garantías de durabilidad, fiabilidad y rendimiento."
+    c: "Se han descartado los tipos de almacenamiento que no están disponibles en las regiones de despliegue."
+    d: "Se ha elegido el tipo de almacenamiento más económico según las tarifas del proveedor."
+    e: "Se han ajustado los parámetros que influyen en el coste (tamaño, frecuencia de acceso, transferencia, replicación y copias de seguridad, entre otros)."
+RA2:
+  titulo: "Administra sistemas de almacenamiento de objetos en la nube, configurándolos y monitorizándolos."
+  ce:
+    a: "Se han definido los nombres de los contenedores (buckets) y las etiquetas de metadatos respetando las limitaciones técnicas del proveedor."
+    b: "Se ha definido la clase de almacenamiento de cada contenedor y, si procede, de cada objeto."
+    c: "Se ha elegido la región geográfica según la latencia, el coste y las restricciones de residencia de los datos."
+    d: "Se ha configurado el cifrado, creando claves específicas cuando ha sido necesario."
+    e: "Se han configurado la visibilidad, el acceso, la seguridad, la monitorización, la observabilidad y la auditoría."
+    f: "Se ha configurado el acceso público por HTTP/HTTPS con dominio personalizado y certificado, cuando se ha requerido."
+    g: "Se han configurado las políticas de ciclo de vida (cambio de clase, versionado y borrado)."
+    h: "Se han configurado la replicación y las copias de seguridad que garantizan la recuperación de los datos."
+RA3:
+  titulo: "Administra sistemas de almacenamiento de ficheros en la nube, tanto de bloque como en red, configurándolos y monitorizándolos."
+  ce:
+    a: "Se ha elegido la clase de almacenamiento según los requisitos, los patrones de acceso, la durabilidad y los costes."
+    b: "Se ha elegido la región y, si procede, la replicación entre zonas o regiones."
+    c: "Se ha configurado el cifrado con las herramientas del proveedor mediante infraestructura como código (IaC)."
+    d: "Se han configurado la visibilidad, el acceso, la seguridad, la monitorización, la observabilidad y la auditoría."
+    e: "Se ha montado el dispositivo o el sistema de ficheros, con acceso desde los orígenes autorizados y en el modo adecuado (solo lectura o lectura y escritura)."
+    f: "Se han aplicado los cambios necesarios durante el ciclo de vida (tamaño, clase, configuración, desmontaje o borrado)."
+    g: "Se han configurado la replicación y las copias de seguridad que permiten recuperar los datos en el plazo requerido."
+RA4:
+  titulo: "Administra sistemas de bases de datos en la nube mediante herramientas gráficas, de línea de comandos, API o infraestructura como código."
+  ce:
+    a: "Se ha elegido la región y la replicación según la latencia, el coste y la residencia de los datos."
+    b: "Se han configurado los parámetros de cifrado, incluida la creación de claves específicas, mediante IaC."
+    c: "Se han configurado la visibilidad, el acceso, la seguridad, la monitorización, la observabilidad y la auditoría para los perfiles autorizados."
+    d: "Se han aplicado cambios durante el ciclo de vida (tamaño, capacidad de cómputo o configuración)."
+    e: "Se han configurado la replicación y las copias de seguridad que permiten recuperar la base de datos en tiempo y forma."
+    f: "Se ha monitorizado el rendimiento de las operaciones de inserción, actualización y consulta."
+    g: "Se han realizado optimizaciones sencillas de configuración, de diseño del esquema o de distribución de los datos."
+RA5:
+  titulo: "Gestiona datos desde el exterior y entre los sistemas de almacenamiento y bases de datos del proveedor, configurando su transferencia y sincronización."
+  ce:
+    a: "Se ha seleccionado la opción de transferencia y sincronización según los requisitos funcionales, de latencia y de seguridad."
+    b: "Se han consultado las tarifas de transferencia y sincronización para tener en cuenta todos los costes."
+    c: "Se han configurado conexiones seguras y eficientes entre el origen y el destino."
+    d: "Se han preparado dispositivos para transferencias fuera de línea, cuidando el cifrado y la seguridad."
+    e: "Se han configurado la visibilidad, el acceso, la seguridad, la monitorización y la auditoría de las transferencias."
+    f: "Se ha configurado la sincronización unidireccional y bidireccional de forma automática y desatendida."
+    g: "Se han completado importaciones o exportaciones manuales o supervisadas cuando no existe replicación periódica."
+    h: "Se han monitorizado las importaciones, exportaciones y sincronizaciones para detectar fallos de conectividad o de integridad."
+RA6:
+  titulo: "Administra la infraestructura de datos de nube híbrida, configurando la conexión y la sincronización entre los sistemas locales y los del proveedor."
+  ce:
+    a: "Se ha verificado que la configuración implementada coincide con la definida en la documentación de referencia."
+    b: "Se ha verificado la disponibilidad de conexiones seguras avanzadas, como VPN o conexiones dedicadas."
+    c: "Se han configurado conexiones seguras y eficientes mediante SSH, VPN o redes privadas del proveedor."
+    d: "Se han configurado la visibilidad, el acceso, la seguridad, la monitorización, la observabilidad y la auditoría."
+    e: "Se ha configurado la sincronización unidireccional o bidireccional automática que cumple los requisitos de latencia."
+    f: "Se han completado importaciones o exportaciones manuales o supervisadas cuando no existe replicación periódica."
+    g: "Se han monitorizado los procesos de importación, exportación y sincronización, tanto automáticos como manuales."
+RA7:
+  titulo: "Administra sistemas de transformación y análisis de datos (OLAP) en la nube, configurándolos y monitorizándolos."
+  ce:
+    a: "Se ha elegido la región y, si procede, la replicación según la latencia, el coste y la residencia de los datos."
+    b: "Se han configurado los parámetros de cifrado, incluida la creación de claves, mediante IaC."
+    c: "Se han configurado la visibilidad, el acceso, la seguridad, la monitorización, la observabilidad y la auditoría para perfiles concretos."
+    d: "Se han configurado la retención, el particionado o la compactación, equilibrando la disponibilidad de los datos y el coste."
+    e: "Se han supervisado los procesos de carga y transformación (ETL), revisando los registros y los tiempos de ejecución."
+    f: "Se han configurado la replicación y las copias de seguridad que permiten recuperar los datos ante pérdidas."
+    g: "Se ha monitorizado el rendimiento y el espacio ocupado para detectar problemas potenciales."

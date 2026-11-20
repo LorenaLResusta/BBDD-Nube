@@ -1,0 +1,29 @@
+{{- /*
+  Ficha de cabecera de una práctica.
+  Uso: {{< practica num="2.3" tipo="Guiada" duracion="2 h" nivel="1" ra="RA2: a, b" entorno="AWS Learner Lab · AWS CLI" entrega="p2_3.md + capturas" >}}
+  tipo:  Guiada | Autónoma | Reto | Proyecto (siempre en castellano; la etiqueta se traduce con i18n)
+  nivel: 1 (básico) · 2 (intermedio) · 3 (avanzado)
+  entrega: qué se entrega al terminar. Con entrega="no" la práctica es solo de aprendizaje.
+*/ -}}
+{{- $tipo := .Get "tipo" | default "Guiada" -}}
+{{- $nivel := int (.Get "nivel" | default "1") -}}
+{{- $clase := lower (replace (replace $tipo "ó" "o") " " "-") -}}
+{{- $etq := i18n (printf "t_%s" $clase) | default $tipo -}}
+<div class="sad-practica sad-practica--{{ $clase }}">
+  <div class="sad-practica-top">
+    <span class="sad-practica-num">{{ .Get "etiqueta" | default (i18n "practica") }} {{ .Get "num" }}</span>
+    <span class="sad-pill sad-pill--{{ $clase }}">{{ $etq }}</span>
+  </div>
+  <dl class="sad-practica-meta">
+    {{- with .Get "duracion" }}<div><dt>{{ i18n "duracion" }}</dt><dd>{{ . }}</dd></div>{{ end -}}
+    <div><dt>{{ i18n "dificultad" }}</dt><dd><span class="sad-nivel" aria-label="{{ i18n "nivel_de" (dict "n" $nivel) }}">{{ range seq 3 }}<i class="{{ if le . $nivel }}on{{ end }}"></i>{{ end }}</span></dd></div>
+    {{- with .Get "ra" }}<div><dt>{{ i18n "ra_ce" }}</dt><dd>{{ replace . ";" " · " }}</dd></div>{{ end -}}
+    {{- with .Get "entorno" }}<div><dt>{{ i18n "software" }}</dt><dd>{{ . }}</dd></div>{{ end -}}
+    {{- $e := .Get "entrega" -}}
+    {{- if or (not $e) (eq $e "no") -}}
+    <div><dt>{{ i18n "entrega" }}</dt><dd>{{ i18n "no_entrega" }}</dd></div>
+    {{- else -}}
+    <div><dt>{{ i18n "entrega" }}</dt><dd>{{ $e }}</dd></div>
+    {{- end -}}
+  </dl>
+</div>
