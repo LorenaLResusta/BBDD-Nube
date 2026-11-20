@@ -1,0 +1,7 @@
+{{- /* Etiqueta que indica el software o el proveedor de un ejemplo.  Uso: {{< sw "AWS CLI" >}} · {{< sw "OpenTofu" >}} · {{< sw "PostgreSQL 17" >}} */ -}}
+{{- $v := .Get 0 | default "AWS" -}}
+{{- $l := lower $v -}}
+{{- $c := "linux" -}}
+{{- if or (in $l "aws") (in $l "s3") (in $l "rds") (in $l "dynamo") (in $l "athena") (in $l "glue") (in $l "redshift") (in $l "ebs") (in $l "efs") }}{{ $c = "pve" }}{{ else if or (in $l "tofu") (in $l "terraform") }}{{ $c = "alt" }}{{ else if or (in $l "postgres") (in $l "mysql") (in $l "mariadb") (in $l "duckdb") (in $l "garage") (in $l "rclone") }}{{ $c = "fw" }}{{ else if or (in $l "azure") (in $l "windows") (in $l "google") (in $l "gcp") }}{{ $c = "win" }}{{ end -}}
+<span class="sad-sw sad-sw--{{ $c }}">{{ $v }}</span>
+{{- /**/ -}}

@@ -1,0 +1,85 @@
+# Configuración del sitio Hugo de los apuntes de Administración de bases de datos y almacenamiento en la nube
+# En GitHub Pages la Action sobrescribe baseURL con la URL real del sitio.
+baseURL = "https://lorenalresusta.github.io/BBDD-Nube/"
+theme = "hugo-book"
+
+defaultContentLanguage = "es"
+
+[languages]
+  [languages.es]
+    label = "Castellano"
+    weight = 1
+    contentDir = "content.es"
+    title = "Bases de datos y almacenamiento en la nube"
+    locale = "es-es"
+    copyright = "Apuntes del módulo 5162 Administración de bases de datos y almacenamiento en la nube · Curso 2026/27"
+
+  [languages.val]
+    label = "Valencià"
+    weight = 2
+    contentDir = "content.val"
+    title = "Bases de dades i emmagatzematge en el núvol"
+    locale = "ca-valencia"
+    copyright = "Apunts del mòdul 5162 Administració de bases de dades i emmagatzematge en el núvol · Curs 2026/27"
+
+[params]
+  BookSection = '/'
+  BookToC = true
+  BookSearch = true
+  # light | dark | auto (sigue el tema del sistema operativo)
+  BookTheme = 'auto'
+  BookComments = false
+  BookPortableLinks = 'warning'
+  BookDateFormat = '02/01/2006'
+  BookRepo = 'https://github.com/LorenaLResusta/BBDD-Nube'
+
+[markup]
+  [markup.goldmark.renderer]
+    # Necesario para Mermaid y los bloques HTML de los shortcodes
+    unsafe = true
+  [markup.highlight]
+    style = "github"
+    noClasses = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[languages.es.menus]
+  [[languages.es.menus.after]]
+    name = "RD 145/2026 (BOE)"
+    url = "https://www.boe.es/buscar/act.php?id=BOE-A-2026-4673"
+    weight = 10
+  [[languages.es.menus.after]]
+    name = "Documentación de AWS"
+    url = "https://docs.aws.amazon.com/es_es/"
+    weight = 20
+  [[languages.es.menus.after]]
+    name = "Calculadora de precios de AWS"
+    url = "https://calculator.aws/"
+    weight = 30
+  [[languages.es.menus.after]]
+    name = "OpenTofu"
+    url = "https://opentofu.org/docs/"
+    weight = 40
+
+[languages.val.menus]
+  [[languages.val.menus.after]]
+    name = "RD 145/2026 (BOE)"
+    url = "https://www.boe.es/buscar/act.php?id=BOE-A-2026-4673"
+    weight = 10
+  [[languages.val.menus.after]]
+    name = "Documentació d'AWS"
+    url = "https://docs.aws.amazon.com/es_es/"
+    weight = 20
+  [[languages.val.menus.after]]
+    name = "Calculadora de preus d'AWS"
+    url = "https://calculator.aws/"
+    weight = 30
+  [[languages.val.menus.after]]
+    name = "OpenTofu"
+    url = "https://opentofu.org/docs/"
+    weight = 40

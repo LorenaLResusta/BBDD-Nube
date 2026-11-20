@@ -1,0 +1,77 @@
+# Resultats d'Aprenentatge (RA) i Criteris d'Avaluació (CA)
+# Mòdul 5162 · Administració de bases de dades i emmagatzematge en el núvol (100 h · 12 ECTS)
+# Curs d'especialització d'FP de grau superior en Recursos i serveis en el núvol
+# Reial Decret 145/2026, de 25 de febrer (BOE-A-2026-4673)
+#
+# Traducció de la redacció adaptada de data/curriculo.yaml. Contrasta-la amb el text oficial.
+# Les claus RAx i les lletres dels criteris han de coincidir amb les de la versió en castellà.
+RA1:
+  titulo: "Selecciona el tipus d'emmagatzematge per a les dades del sistema, segons els requisits funcionals i els criteris de durabilitat, seguretat, fiabilitat, rendiment i cost."
+  ce:
+    a: "S'ha comprovat que l'emmagatzematge d'objectes i de fitxers triat compleix els requisits funcionals i no funcionals del sistema."
+    b: "S'ha consultat la documentació dels tipus d'emmagatzematge per a verificar-ne les garanties de durabilitat, fiabilitat i rendiment."
+    c: "S'han descartat els tipus d'emmagatzematge que no estan disponibles en les regions de desplegament."
+    d: "S'ha triat el tipus d'emmagatzematge més econòmic segons les tarifes del proveïdor."
+    e: "S'han ajustat els paràmetres que influïxen en el cost (grandària, freqüència d'accés, transferència, replicació i còpies de seguretat, entre altres)."
+RA2:
+  titulo: "Administra sistemes d'emmagatzematge d'objectes en el núvol, configurant-los i monitoritzant-los."
+  ce:
+    a: "S'han definit els noms dels contenidors (buckets) i les etiquetes de metadades respectant les limitacions tècniques del proveïdor."
+    b: "S'ha definit la classe d'emmagatzematge de cada contenidor i, si escau, de cada objecte."
+    c: "S'ha triat la regió geogràfica segons la latència, el cost i les restriccions de residència de les dades."
+    d: "S'ha configurat el xifratge, creant claus específiques quan ha sigut necessari."
+    e: "S'han configurat la visibilitat, l'accés, la seguretat, la monitorització, l'observabilitat i l'auditoria."
+    f: "S'ha configurat l'accés públic per HTTP/HTTPS amb domini personalitzat i certificat, quan s'ha requerit."
+    g: "S'han configurat les polítiques de cicle de vida (canvi de classe, versionat i esborrat)."
+    h: "S'han configurat la replicació i les còpies de seguretat que garantixen la recuperació de les dades."
+RA3:
+  titulo: "Administra sistemes d'emmagatzematge de fitxers en el núvol, tant de bloc com en xarxa, configurant-los i monitoritzant-los."
+  ce:
+    a: "S'ha triat la classe d'emmagatzematge segons els requisits, els patrons d'accés, la durabilitat i els costos."
+    b: "S'ha triat la regió i, si escau, la replicació entre zones o regions."
+    c: "S'ha configurat el xifratge amb les ferramentes del proveïdor mitjançant infraestructura com a codi (IaC)."
+    d: "S'han configurat la visibilitat, l'accés, la seguretat, la monitorització, l'observabilitat i l'auditoria."
+    e: "S'ha muntat el dispositiu o el sistema de fitxers, amb accés des dels orígens autoritzats i en el mode adequat (només lectura o lectura i escriptura)."
+    f: "S'han aplicat els canvis necessaris durant el cicle de vida (grandària, classe, configuració, desmuntatge o esborrat)."
+    g: "S'han configurat la replicació i les còpies de seguretat que permeten recuperar les dades en el termini requerit."
+RA4:
+  titulo: "Administra sistemes de bases de dades en el núvol mitjançant ferramentes gràfiques, de línia d'ordres, API o infraestructura com a codi."
+  ce:
+    a: "S'ha triat la regió i la replicació segons la latència, el cost i la residència de les dades."
+    b: "S'han configurat els paràmetres de xifratge, inclosa la creació de claus específiques, mitjançant IaC."
+    c: "S'han configurat la visibilitat, l'accés, la seguretat, la monitorització, l'observabilitat i l'auditoria per als perfils autoritzats."
+    d: "S'han aplicat canvis durant el cicle de vida (grandària, capacitat de còmput o configuració)."
+    e: "S'han configurat la replicació i les còpies de seguretat que permeten recuperar la base de dades en temps i forma."
+    f: "S'ha monitoritzat el rendiment de les operacions d'inserció, actualització i consulta."
+    g: "S'han fet optimitzacions senzilles de configuració, de disseny de l'esquema o de distribució de les dades."
+RA5:
+  titulo: "Gestiona dades des de l'exterior i entre els sistemes d'emmagatzematge i bases de dades del proveïdor, configurant-ne la transferència i la sincronització."
+  ce:
+    a: "S'ha seleccionat l'opció de transferència i sincronització segons els requisits funcionals, de latència i de seguretat."
+    b: "S'han consultat les tarifes de transferència i sincronització per a tindre en compte tots els costos."
+    c: "S'han configurat connexions segures i eficients entre l'origen i la destinació."
+    d: "S'han preparat dispositius per a transferències fora de línia, tenint cura del xifratge i la seguretat."
+    e: "S'han configurat la visibilitat, l'accés, la seguretat, la monitorització i l'auditoria de les transferències."
+    f: "S'ha configurat la sincronització unidireccional i bidireccional de manera automàtica i desatesa."
+    g: "S'han completat importacions o exportacions manuals o supervisades quan no hi ha replicació periòdica."
+    h: "S'han monitoritzat les importacions, exportacions i sincronitzacions per a detectar errors de connectivitat o d'integritat."
+RA6:
+  titulo: "Administra la infraestructura de dades de núvol híbrid, configurant la connexió i la sincronització entre els sistemes locals i els del proveïdor."
+  ce:
+    a: "S'ha verificat que la configuració implementada coincidix amb la definida en la documentació de referència."
+    b: "S'ha verificat la disponibilitat de connexions segures avançades, com ara VPN o connexions dedicades."
+    c: "S'han configurat connexions segures i eficients mitjançant SSH, VPN o xarxes privades del proveïdor."
+    d: "S'han configurat la visibilitat, l'accés, la seguretat, la monitorització, l'observabilitat i l'auditoria."
+    e: "S'ha configurat la sincronització unidireccional o bidireccional automàtica que compleix els requisits de latència."
+    f: "S'han completat importacions o exportacions manuals o supervisades quan no hi ha replicació periòdica."
+    g: "S'han monitoritzat els processos d'importació, exportació i sincronització, tant automàtics com manuals."
+RA7:
+  titulo: "Administra sistemes de transformació i anàlisi de dades (OLAP) en el núvol, configurant-los i monitoritzant-los."
+  ce:
+    a: "S'ha triat la regió i, si escau, la replicació segons la latència, el cost i la residència de les dades."
+    b: "S'han configurat els paràmetres de xifratge, inclosa la creació de claus, mitjançant IaC."
+    c: "S'han configurat la visibilitat, l'accés, la seguretat, la monitorització, l'observabilitat i l'auditoria per a perfils concrets."
+    d: "S'han configurat la retenció, el particionament o la compactació, equilibrant la disponibilitat de les dades i el cost."
+    e: "S'han supervisat els processos de càrrega i transformació (ETL), revisant els registres i els temps d'execució."
+    f: "S'han configurat la replicació i les còpies de seguretat que permeten recuperar les dades davant de pèrdues."
+    g: "S'ha monitoritzat el rendiment i l'espai ocupat per a detectar problemes potencials."
